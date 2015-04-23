@@ -1,55 +1,67 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<!DOCTYPE html>
+<html>
+  <head>
 	<title>WebDev Assessment</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
-	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
-	<link href="style.css" rel="stylesheet">
-</head>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,600italic,700,700italic,900" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+ <body>
 
-	<style>
-		body {
-			background: #fff;
-		}
-	</style>
+  <div class="container">
+    <h1>WebDev Assessment</h1>
 
-	<container>
+    <p><em>This</em> is the assessment. It is both objective and subjective.</p>
+    <p>The goals of this assessment are to get a general understanding of your skill
+    level,<br />
+    attention to detail, and understanding of the web.</p>
 
-WebDev Assessment
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>Requirements</h3>
 
-This is the assessment. It is both objective and subjective.
+        <ol>
+          <li>Replicate this mockup (yes, the assessment instructions) in
+          HTML/CSS/JavaScript as closely as possible.</li>
+          <li>Use HTML5.</li>
+          <li>Use the "Titillium Web" font.</li>
+          <li>Clicking "Submit!" should create an alert with jQuery</li>
+          <li>The contents of the alert should contain the answer to, "How old is Bobby
+          if, in 4 years, he will be 3 times as old as he is today?"</li>
+        </ol>
+      </div>
 
-The goals of this assessment are to get a general understanding of your skill
-level, attention to detail, and understanding of the web.
+      <div class="col-sm-6">
+        <h3>Guidelines</h3>
 
-Requirements
+        <ul>
+          <li><span>Demonstrate knowledge of HTML5</span></li>
+          <li><span>Demonstrate knowledge of efficient CSS</span></li>
+          <li><span>Demonstrate knowledge of the DOM</span></li>
+          <li><span>Demonstrate knowledge of jQuery</span></li>
+          <li><span>Demonstrate knowledge of version control</span></li>
+          <li><span>Use performant and secure methods</span></li>
+        </ul>
+      </div>
+    </div> <!-- row -->
 
-Replicate this mockup (yes, the assessment instructions) in HTML/CSS/JavaScript
-as closely as possible.
-Use HTML5.
-Use the "Titillium Web" font.
-Clicking "Submit!" should create an alert with jQuery
-The contents of the alert should contain the answer to, "How old is Bobby if, in
-4 years, he will be 3 times as old as he is today?"
+    <div class="col-sm-12 text-center">
+      <button type="button" class="btn btn-red">Submit!</button>
+    </div>
 
-Guidelines
+    <p>Using <code>git</code> or <code>git-svn</code>, submit a Github pull request to
+    the original repository for our<br />
+    review. If you are not able to submit a pull request, email us your zipped
+    project.</p>
+  </div> <!-- container -->
 
-Demonstrate knowledge of HTML5
-Demonstrate knowledge of efficient CSS
-Demonstrate knowledge of the DOM
-Demonstrate knowledge of jQuery
-Demonstrate knowledge of version control
-Use performant and secure methods
-
-Submit!
-
-Using git or git-svn, submit a Github pull request to the original repository
-for our review. If you are not able to submit a pull request, email us your
-zipped project.
-
-		</div>
-	</container>
-</body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script>
+    $("button").click( function() {
+        alert("How old is Bobby if, in 4 years, he will be 3 times as old as he is today?");
+    });
+  </script>
+ </body>
 </html>

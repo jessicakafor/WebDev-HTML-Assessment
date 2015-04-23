@@ -1,0 +1,53 @@
+body, p {
+
+	color: #fff;
+	background: #323440;
+	font: 16px normal 'Titillium Web', sans-serif;
+}
+
+ol {list-style-type: decimal;}
+ul {list-style-type: square;}
+
+ol, ul {
+    margin-top: 25px;	
+	padding-start: 0;
+    -webkit-padding-start: 0;
+}
+
+ul li {
+	font-size: 12px;
+	color: #979c9c;
+}
+
+ul li span {
+	font-size: 16px;
+	color: #fff;
+}
+
+h1, h2, h3 {font-weight: bold;}
+
+button.btn.btn-red {
+    color: #fff;
+    font-size: 20px;
+    background: #942b3c;
+    margin: 20px;
+    padding: 15px 18px;
+}
+
+code {
+	color: #fff;
+	background: #202129;
+}
+
+@media (min-width: 768px) {
+
+.container {
+  padding: 50px;
+  max-width: 715px;
+  background: #323440;
+ }
+
+ .row > div {
+ 	  padding-right: 40px;
+ }
+}
